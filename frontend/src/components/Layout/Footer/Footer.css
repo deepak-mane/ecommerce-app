@@ -1,0 +1,101 @@
+footer {
+  padding: 2vmax;
+  background-color: var(--forfooter);
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  transition: all 0.5s;
+}
+
+.title,
+.icon {
+  color: var(--white);
+  padding: 10px;
+  size: 32px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.leftFooter {
+  font-size: 1vmax;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leftFooter > h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  color: var(--themecolor);
+}
+
+.leftFooter > p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+
+.midFooter {
+  width: 60%;
+  text-align: center;
+}
+.midFooter > h1 {
+  font-size: 3vmax;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+  color: var(--themecolor);
+}
+
+.midFooter > p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1vmax auto;
+  font-size: 0.5vmax;
+}
+
+.rightFooter {
+  width: 20%;
+  /* margin: 5px 10px; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1vmax;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightFooter > h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1vmax;
+  padding: 10px;
+  color: var(--themecolor);
+}
+
+.rightFooter > p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1vmax auto;
+}
+
+.leftFooter span:hover,
+.midFooter span:hover,
+.rightFooter span:hover {
+  color: var(--themecolor);
+}
+
+ion-icon {
+  zoom: 1.5;
+  padding: 2px;
+}

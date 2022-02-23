@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: var(--white);
+  transition: 0.5s;
+}
+
+.main.active {
+  width: calc(100% - 80px);
+  left: 80px;
+}
+
+/* Making Responsive Design */
+@media (max-width: 991px) {
+  .graphBox {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .navigation {
+    left: 0px;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardBox {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cardHeader h2 {
+    font-size: 20px;
+  }
+
+  .user {
+    min-width: 40px;
+  }
+
+  .toggle {
+    z-index: 10001;
+  }
+}

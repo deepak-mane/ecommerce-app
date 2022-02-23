@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  min-height: 100vh;
+}
+
+/* @media (max-width: 991px) {
+  html {
+    font-size: 55%; 
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; 
+  }
+} */
+
+:root {
+  /* Change Theme color of whole page background */
+  --color-primary-dark: #dcdcdc; /* navy blue */
+  --color-primary-light: #fefefe; /* Themecolor blue */
+
+  --blue: #287bff;
+  --navyblue: #000080;
+  --white: #ffffff;
+  --white1: #e0e0e0;
+  --grey--100: #fefefe;
+  --grey--200: #ededed;
+  --grey--300: #dcdcdc;
+  --grey--400: #cbcbcb;
+  --grey--500: #aaaaaa;
+  --grey--600: #a9a9a9;
+  --black1: #222;
+  --black2: #999;
+
+  --forheader: #131a22;
+  --fornavbar: #232f3e;
+  --forfooter: #131a22;
+  --formain: linear-gradient(to right bottom, var(--blue), var(--white));
+  --themecolor: #287bff;
+}
