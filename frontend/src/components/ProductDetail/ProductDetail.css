@@ -1,0 +1,11 @@
+.container-productdetail {
+  content: '';
+  width: 400px;
+  height: 400px;
+  background-color: var(--themecolor);
+  position: absolute;
+  top: 0%;
+  left: 0;
+  clip-path: polygon(100% 30%, 100% 100%, 50% 75%, 0 100%, 0% 25%, 50% 0%);
+  max-width: 100%;
+}

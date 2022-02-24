@@ -79,12 +79,13 @@ function DashboardPage() {
               </a>
             </div>
             <table>
+
               <thead>
                 <tr>
-                  <td>Name</td>
-                  <td>Price</td>
-                  <td>Payment</td>
-                  <td>Status</td>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Payment</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
@@ -176,6 +177,7 @@ function DashboardPage() {
                     <span className='status delivered'>Delivered</span>
                   </td>
                 </tr>
+
               </tbody>
             </table>
           </div>

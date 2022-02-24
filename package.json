@@ -2,9 +2,14 @@
   "name": "ecommerce-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "backend/server.js",
   "scripts": {
-    "client": "sleep 5 && npm start --prefix frontend"
+    "cleanup": "npx kill-port 3000 4000 5000 6000 7797",
+    "monitor": "netstat -ano | grep -w \"3000\\|4000\\|5000\\|6000\\|7797\"",
+    "client": "sleep 5 && npm start --prefix frontend",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "xwave": "concurrently --raw \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",

@@ -129,7 +129,7 @@
   margin-top: 10px;
 }
 
-.details table thead td {
+.details table thead tr th {
   font-weight: 600;
 }
 

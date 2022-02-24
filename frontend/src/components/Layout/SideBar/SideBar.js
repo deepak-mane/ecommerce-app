@@ -13,8 +13,9 @@ function SideBar({ showSideBar , logoImage}) {
   const navigate = useNavigate()
   const location = useLocation()
 
-  console.log('showSideBar value:', showSideBar)
-  console.log('logoImage value:', logoImage)
+  // Debugging if Toggle button is Opening/Closing SideBar uncomment
+  // console.log('showSideBar value:', showSideBar)
+  // console.log('logoImage value:', logoImage)
 
 
   const menuItems = [
@@ -86,11 +87,11 @@ function SideBar({ showSideBar , logoImage}) {
         <ul>
           {menuItems.map(item => {
             return item.title !== 'Logout' ? (
-              <li>
+              <li key={item.title}>
                 <Link
                   to={`${item.path}`}
                   className={`nav-link${location.pathname.includes(item.path) ? ' active' : ''}`}
-                  key={item.title}
+                  
                 >
                   <span className='icon'>
                     <ion-icon name={`${item.iconName}`}></ion-icon>
@@ -99,11 +100,11 @@ function SideBar({ showSideBar , logoImage}) {
                 </Link>
               </li>
             ) : (
-              <li>
+              <li key={item.title}>
                 <Link
                   to={`${item.path}`}
                   className={`nav-link${location.pathname.includes(item.path) ? ' active' : ''}`}
-                  key={item.title}
+                  
                 >
                   <span className='icon'>
                     <ion-icon name={`${item.iconName}`}></ion-icon>

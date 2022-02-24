@@ -1,0 +1,35 @@
+.HomePage-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-filter-column {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 600px;
+  background-color: var(--grey--200);
+}
+.search-results-container {
+  display: flex;
+  margin: 2vmax auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Navaigation on Top of Home Screen*/
+.nav-progressive-content {
+  background-color: var(--fornavbar);
+  direction: ltr;
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  padding: 10px 10px;
+}
+
+#nav-a {
+  color: var(--white1);
+  margin-top: 10px;
+  padding: 0 10px;
+  margin: 10px 10px;
+}
